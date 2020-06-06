@@ -175,6 +175,78 @@ $ git add <fileName.extension>
 
 
 
+# To Save in git
+
+$ git commit -m "yourMessage"
+
+
+# To see if file modified
+
+$ git status
+
+
+
+# To add all files from current directory use (.)
+
+$ git add .
+
+
+# To see who made changes to what
+
+$ git log
+
+
+
+# To (no longer will be tracked by Git); delete file from Git and from Directory 
+
+$ git rm <fileName.extension>
+#Don't forget to Commit
+
+
+
+
+# To delete file from Directory Only
+
+$ rm <fileName.extension>
+
+
+
+
+# If we delete file accidentally. To bring that file back
+
+$ git checkout --(space)<fileName.extension>
+
+# ------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
