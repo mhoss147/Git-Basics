@@ -76,13 +76,14 @@ user.email=dkfjdfj@gmail.com
 
 #~ tilda is home directory in Linux;   (.) for hidden directory;we are looking at the content of /home/cloud_user@...71c/ gitconfig  file
 
+
 $ cat ~/.gitconfig 
 
 [user]
 
         name = Mo So
         
-        email = sorowar.amega@gmail.com
+        email = dkfjdfj@gmail.com
 
 
 $ cat /etc/gitconfig 
