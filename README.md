@@ -41,11 +41,11 @@ $ sudo apt-get install git
 Is this ok (yes/no): yes
 
 
-#see if installed
+#See if installed
 
 $ git --version
 
-#see current configuration
+#See current configuration
 
 $ git config -l
 
@@ -63,7 +63,7 @@ $ git config --global user.email "dkfjdfj@gmail.com"
 $ sudo git config --system core.editor vim
 
 
-#check if configured
+#Check if configured
 
 $ git config -l
 
@@ -74,7 +74,7 @@ user.name=Mo So
 user.email=dkfjdfj@gmail.com
 
 
-#~ tilda is home directory in Linux;   (.) for hidden directory;we are looking at the content of /home/cloud_user@...71c/ gitconfig  file
+#~ Tilda is home directory in Linux;   (.) for hidden directory;we are looking at the content of /home/cloud_user@...71c/ gitconfig  file
 
 
 $ cat ~/.gitconfig 
@@ -93,5 +93,29 @@ $ cat /etc/gitconfig
         editor = vim
         
 # Working with Repositories in Git
+
+
+#Present working directory
+$ pwd
+
+
+
+
+#Make a directory
+$ mkdir mohDirctory
+
+
+#Go to mohDirctory
+$ cd mohDirctory/
+
+
+#See files inside it
+$ ll -a
+total 8
+drwxrwxr-x  2 cloud_user cloud_user 4096 Jun  6 18:27 ./
+drwxr-xr-x 22 cloud_user cloud_user 4096 Jun  6 18:27 ../
+
+
+
 
 
