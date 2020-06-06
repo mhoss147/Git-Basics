@@ -157,6 +157,25 @@ Esc, shift + :, q!, return
 
 
 
+# To see the status of current directory
+
+$ git status
+
+
+
+# To start git tracking the file
+
+$ git add fileName.extension
+
+
+
+
+
+
+
+
+
+
 
 
 
