@@ -19,15 +19,35 @@ Head > Commit > Content.
 
 
 Log into your account; here i did; 
-cloud_user@sorowar0071c:~$ 
+cloud_user@...71c:~$ 
 
 This user does not have permission to install git; so sudo
 
-cloud_user@sorowar0071c:~$ sudo yum install git (for RedHat/)
+$ sudo yum install git (for RedHat/CentOS)
 
-cloud_user@sorowar0071c:~$ sudo apt-get install git (for Ubuntu; i am using it)
+$ sudo apt-get install git (for Ubuntu/)
 
-[sudo] password for cloud_user: 
+[sudo] password for user: ...
+
+Is this ok (yes/no): yes
+
+
+$ git --version
+
+#see current configuration
+$ git config -l
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
