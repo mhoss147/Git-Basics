@@ -14,7 +14,7 @@ Head: Current commit is called Head.
 
 Head > Commit > Content.
 
-# ---------------------------------------------------------------------------------------
+# ---------------------------------------------------------------
 
 # Git Installation and Configuration
 
@@ -97,7 +97,7 @@ $ cat /etc/gitconfig
 
         editor = vim
         
-# --------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------
 
 # Working with Repositories in Git
 
@@ -149,17 +149,17 @@ $ vim intro.txt
 
 # Write inside that file
 
-Esc, i
+Esc i
 
 
 # Save and exit
 
-Esc, shift + :, qw, return
+Esc shift + : qw return
 
 
 # Exit without saving
 
-Esc, shift + :, q!, return
+Esc shift + : q! return
 
 
 
@@ -171,7 +171,7 @@ $ git status
 
 # To start git tracking the file
 
-$ git add fileName.extension
+$ git add <fileName.extension>
 
 
 
