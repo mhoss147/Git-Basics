@@ -14,7 +14,7 @@ Head: Current commit is called Head.
 
 Head > Commit > Content.
 
-
+# ---------------------------------------------------------------------------------------
 
 # Git Installation and Configuration
 
@@ -30,6 +30,10 @@ This user does not have permission to install git; so use sudo
 
 $ sudo yum install git 
 
+[sudo] password for user: ...
+
+
+Is this ok (yes/no): yes
 
 # (for Ubuntu/)
 
@@ -93,7 +97,7 @@ $ cat /etc/gitconfig
 
         editor = vim
         
-# -----------------------------------------------------
+# --------------------------------------------------------------------------------------------
 
 # Working with Repositories in Git
 
@@ -105,55 +109,55 @@ $ pwd
 
 
 
-#Make a directory
+# Make a directory
 
 $ mkdir mohDirctory
 
 
-#Go to mohDirctory
+# Go to mohDirctory
 
 $ cd mohDirctory/
 
 
-#See files inside it; note that, alias ll == ls -l
+# See files inside it; note that, alias ll == ls -l
 
 $ ll -a
 
       
           
-#Create empty repository
+# Create empty repository
 
 $ git init
 
 
 
-#See all files incl. hidden
+# See all files incl. hidden
 
 $ ll -a
 
 
 
-#Look inside .git directory
+# Look inside .git directory
 
 $ ll -a .git/
 
 
-#Creating New text file named intro
+# Creating New text file named intro
 
 $ vim intro.txt
 
 
-#Write inside that file
+# Write inside that file
 
 Esc, i
 
 
-#Save and exit
+# Save and exit
 
 Esc, shift + :, qw, return
 
 
-#Exit without saving
+# Exit without saving
 
 Esc, shift + :, q!, return
 
