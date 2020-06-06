@@ -79,6 +79,7 @@ user.email=dkfjdfj@gmail.com
 
 $ cat ~/.gitconfig 
 
+
 [user]
 
         name = Mo So
@@ -112,18 +113,49 @@ $ mkdir mohDirctory
 $ cd mohDirctory/
 
 
-#See files inside it
+#See files inside it; note that, alias ll == ls -l
 
 $ ll -a
-          total 8
-          drwxrwxr-x  2 cloud_user cloud_user 4096 Jun  6 18:27 ./
-          drwxr-xr-x 22 cloud_user cloud_user 4096 Jun  6 18:27 ../
-          
-          
+
+      
           
 #Create empty repository
 
 $ git init
+
+
+
+#See all files incl. hidden
+$ ll -a
+
+
+
+#Look inside .git directory
+$ ll -a .git/
+
+
+#Creating New text file named intro
+$ vim intro.txt
+
+
+#Write inside that file
+Esc, i
+
+
+#Save and exit
+Esc, shift + :, qw, return
+
+
+#Exit without saving
+Esc, shift + :, q!, return
+
+
+
+
+
+
+
+
 
 
 
