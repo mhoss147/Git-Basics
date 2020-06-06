@@ -118,6 +118,14 @@ $ ll -a
           total 8
           drwxrwxr-x  2 cloud_user cloud_user 4096 Jun  6 18:27 ./
           drwxr-xr-x 22 cloud_user cloud_user 4096 Jun  6 18:27 ../
+          
+          
+          
+#Create empty repository
+
+$ git init
+
+
 
 
 
