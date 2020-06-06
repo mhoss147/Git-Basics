@@ -37,6 +37,7 @@ $ sudo apt-get install git
 Is this ok (yes/no): yes
 
 #see if installed
+
 $ git --version
 
 #see current configuration
