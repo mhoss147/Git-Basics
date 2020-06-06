@@ -26,12 +26,12 @@ cloud_user@...71c:~$
 This user does not have permission to install git; so use sudo
 
 
-(for RedHat/CentOS)
+# (for RedHat/CentOS)
 
 $ sudo yum install git 
 
 
-(for Ubuntu/)
+# (for Ubuntu/)
 
 $ sudo apt-get install git 
 
@@ -41,11 +41,11 @@ $ sudo apt-get install git
 Is this ok (yes/no): yes
 
 
-#See if installed
+# See if installed
 
 $ git --version
 
-#See current configuration
+# See current configuration
 
 $ git config -l
 
@@ -58,12 +58,12 @@ $ git config --global user.name "Mo So"
 $ git config --global user.email "dkfjdfj@gmail.com"
 
 
-#sudo for permission
+
 
 $ sudo git config --system core.editor vim
 
 
-#Check if configured
+# Check if configured
 
 $ git config -l
 
@@ -74,7 +74,7 @@ user.name=Mo So
 user.email=dkfjdfj@gmail.com
 
 
-#~ Tilda is home directory in Linux;   (.) for hidden directory;we are looking at the content of /home/cloud_user@...71c/ gitconfig  file
+# (~) Tilda is home directory in Linux;   (.) for hidden directory;we are looking at the content of /home/cloud_user@...71c/ gitconfig  file
 
 
 $ cat ~/.gitconfig 
@@ -93,10 +93,12 @@ $ cat /etc/gitconfig
 
         editor = vim
         
+# -----------------------------------------------------
+
 # Working with Repositories in Git
 
 
-#Present working directory
+# Present working directory
 
 $ pwd
 
