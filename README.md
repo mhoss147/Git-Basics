@@ -126,27 +126,33 @@ $ git init
 
 
 #See all files incl. hidden
+
 $ ll -a
 
 
 
 #Look inside .git directory
+
 $ ll -a .git/
 
 
 #Creating New text file named intro
+
 $ vim intro.txt
 
 
 #Write inside that file
+
 Esc, i
 
 
 #Save and exit
+
 Esc, shift + :, qw, return
 
 
 #Exit without saving
+
 Esc, shift + :, q!, return
 
 
