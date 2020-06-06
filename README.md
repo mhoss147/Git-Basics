@@ -102,18 +102,21 @@ $ pwd
 
 
 #Make a directory
+
 $ mkdir mohDirctory
 
 
 #Go to mohDirctory
+
 $ cd mohDirctory/
 
 
 #See files inside it
+
 $ ll -a
-total 8
-drwxrwxr-x  2 cloud_user cloud_user 4096 Jun  6 18:27 ./
-drwxr-xr-x 22 cloud_user cloud_user 4096 Jun  6 18:27 ../
+          total 8
+          drwxrwxr-x  2 cloud_user cloud_user 4096 Jun  6 18:27 ./
+          drwxr-xr-x 22 cloud_user cloud_user 4096 Jun  6 18:27 ../
 
 
 
