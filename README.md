@@ -1,3 +1,5 @@
+
+
 # Git Basics LA
 
 
@@ -21,17 +23,21 @@ Head > Commit > Content.
 Log into your account; here i did; 
 cloud_user@...71c:~$ 
 
-This user does not have permission to install git; so sudo
+This user does not have permission to install git; so use sudo
 
-$ sudo yum install git (for RedHat/CentOS)
 
-$ sudo apt-get install git (for Ubuntu/)
+(for RedHat/CentOS)
+$ sudo yum install git 
+
+
+(for Ubuntu/)
+$ sudo apt-get install git 
 
 [sudo] password for user: ...
 
 Is this ok (yes/no): yes
 
-
+#see if installed
 $ git --version
 
 #see current configuration
@@ -39,23 +45,30 @@ $ git config -l
 
 
 
+$ git config --global user.name "Mo So"
 
 
+$ git config --global user.email "dkfjdfj@gmail.com"
 
 
+#sudo for permission
+$ sudo git config --system core.editor vim
 
 
+#check if configured
+$ git config -l
+core.editor=vim
+user.name=Mo So
+user.email=dkfjdfj@gmail.com
 
 
+#~ tilda is home directory in Linux;   (.) for hidden directory;we are looking at the content of /home/cloud_user@...71c/ gitconfig  file
+$ cat ~/.gitconfig 
+[user]
+        name = Mo So
+        email = sorowar.amega@gmail.com
 
 
-
-
-
-
-
-
-
-
-
-
+$ cat /etc/gitconfig 
+[core]
+        editor = vim
