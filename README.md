@@ -450,7 +450,7 @@ Branch can be merged back into master branch when work is complete.
   
 # Create a branch
 
-$ git branch <newBranchName>
+$ git branch "newBranchName"
   
   
   
