@@ -1,8 +1,13 @@
 
-#                                             Git Basics LA
+# Git Basics LA
 
+# ------------------------------------------------------------------
 
 # Git Introduction and Architecture
+
+# ------------------------------------------------------------------
+
+
 
 Commit: Is siply a state. The git commit command is one of the core primary functions of Git. Prior use of the git add command is required to select the changes that will be staged for the next commit. Then git commit is used to create a snapshot of the staged changes along a timeline of a Git projects history.
 
@@ -17,6 +22,9 @@ Head > Commit > Content.
 # ---------------------------------------------------------------
 
 # Git Installation and Configuration
+
+# ------------------------------------------------------------------
+
 
 Log into your account; here i did; 
 
@@ -100,6 +108,8 @@ $ cat /etc/gitconfig
 # ------------------------------------------------------------------
 
 # Working with Repositories in Git
+
+# ------------------------------------------------------------------
 
 
 # Present working directory
@@ -217,6 +227,297 @@ $ rm <fileName.extension>
 $ git checkout --(space)<fileName.extension>
 
 # ------------------------------------------------------------------
+
+# Managing What is Tracked with gitignore
+
+# ------------------------------------------------------------------
+
+
+
+# Create a sample empty jpg file named pic
+
+$ touch pic.jpg
+
+
+# To ignore the files you don't want to track
+
+$ vim .gitignore
+
+
+
+# List all the files you wan to ignore
+
+$ *.jpg 
+
+
+
+# Create 1 folder named temp and 2 files in it named moh & sak
+
+$ mkdir temp
+$ touch temp/moh
+$ touch yemp/sak
+$ ls -l
+
+
+# If you dont want git to track folder temp and files moh & sak; just add temp in .gitignore
+
+$ vim .gitignore
+temp/ (write inside editor, save and exit)
+$ git status
+
+
+# It is also possible to exclude certain paths
+
+$ git config --global core.excludesfile <path>
+
+# ------------------------------------------------------------------
+
+# Cloning Repositories
+
+# ------------------------------------------------------------------
+
+
+# See the files in PWD
+
+$ ls -l
+
+
+# Go one step back/up
+
+$ cd .. 
+
+
+# To clone a folder/dir
+
+$ git clone <folder/dir name>/ <just put the name of folder/dir where you want to clone; it will also create that folder/dir>
+
+$ ls -l (check if cloned)
+
+
+# Go to the folder/dir, where you just cloned
+
+$ cd <folder/dir>/
+
+
+# Create a file there
+
+$ touch <fileName.Ext>
+
+
+
+# Save/commit that file to git
+
+$ git commit -m "yourMessage"
+
+$ git log (check the dtails)
+
+
+# Go to original folder/dir 
+
+$ cd ../<folder/dir name>/
+
+$ git log (see, it does not have the clone; beccause each repo is unique. We've 2 different records tracking 2 different folder/dir)
+
+
+
+# Cloning via SSH 
+
+$ git clone my_username@server:<org-path-relative-to-user-home> ~/<local-repo-path>
+  
+  
+  
+# Cloing from Github
+
+$ git clone <https://github.com/...> ~/<local-repo-path>  (if you don't give the name of <local-repo-path>, it will copy to pwd)
+  
+$ cd ../<local-repo-path> 
+  
+$ ls -l (see the files)
+
+$ git log (se the details of cloning)
+
+(press "q" to go to terminal)
+
+
+
+
+# To work on any files you just cloned
+
+$ vim <existing fileName>
+  
+(save and exit)  
+
+
+
+# Add that file you just modified to git
+
+$ git add <existing fileName>
+
+$ git status (see the files modified)
+
+
+
+# Save modified file
+
+$ git commit -m "yourMessage"
+
+$ git log (see what added)
+
+(press "q" to go to terminal)
+
+
+
+# Before push see git configuration
+
+$ git config -l
+
+
+
+# Push it to git origin from our master
+
+$ git push origin master
+
+(put user name and password when prompt)
+
+
+
+# ------------------------------------------------------------------
+
+# Understanding Git Logging
+
+# ------------------------------------------------------------------
+
+
+# Who did what in repo
+
+$ git log
+
+
+
+# In short 
+
+$ git log --oneline
+
+
+
+# Details of who did what in repo
+
+$ git log -p
+
+(/<what you wan to search here>)
+
+(press End to go down. press Shft + End to go up)
+  
+(press "q" to go to terminal)
+
+
+
+# Who did what in file
+
+$ git log -- (space) <fileName>
+  
+  
+
+# Who did what in file in short
+
+$ git log --oneline <fileName>
+  
+  
+  
+# To see graphical representation
+
+$ git log --graph --decorate
+
+
+
+# ------------------------------------------------------------------
+
+
+# Working with Branches in Git
+
+
+
+# ------------------------------------------------------------------
+
+
+
+  
+# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
