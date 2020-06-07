@@ -367,9 +367,7 @@ $ git log (see what added)
 
 
 
-# Before push see git configuration
-
-$ git config -l
+<nameOfTheNewDirYouWantToPutClone>
 
 
 
@@ -435,6 +433,14 @@ $ git log --graph --decorate
 
 # Working with Branches in Git
 
+Branching allows you to create an effective copy of the master branch within the repo that can be worked on without interfering with the master.
+
+Branch can be used to fix the bug; create new features. It declutters the master branch.
+
+Branch is similar to cloning except it is in the same repo
+
+Branch can be merged back into master branch when work is complete.
+
 
 
 # ------------------------------------------------------------------
@@ -442,7 +448,177 @@ $ git log --graph --decorate
 
 
   
-# 
+# Create a branch
+
+$ git branch <newBranchName>
+  
+  
+  
+# To change to that branch
+
+$ git cheakout <existingBranchName>
+
+$ git status (see...)
+
+
+
+# Create a new directory named website2
+
+$ mkdir website2
+
+
+
+# Create a file inside that directory
+
+$ touch website2/index.html
+
+$ touch website2/logo.jpg
+
+
+
+# Add everything inside of that dir
+
+$ git add website2/*
+
+$ git status (see..)
+
+
+# Save to the branch you created 
+
+$ git commit -m "yourMessage"
+
+$ git status (see..)
+
+$ ls -l (see files)
+
+$ ls -l website2/ (see files)
+
+
+
+# Switch back to master 
+
+$ git checkout master 
+
+$ ls -l (see website2 is not here)
+
+
+
+# Create a branch and switch back to it immediately
+
+$ git checkout -b <newBranchName>
+
+$ git status (see if you are in branch)
+
+
+# See what you have in this branch
+
+$ vim .git/
+
+
+
+# Open one of the file
+
+$ vim <existingFileName>
+  
+(edit and save, exit)
+
+
+# Save waht you did
+
+$ git commit -a -m "yourMessage"  (-a will add everything you changed)
+
+$ git status (see what saved)
+
+
+# See contents of the file
+
+$ cat <existingFileName.extn>
+
+
+
+# Switch back to branch
+
+
+$ git checkout <existingBranchName>
+
+
+# Switch back to master 
+
+$ git checkout master
+
+
+
+
+# ------------------------------------------------------------------
+
+Merging and Pushing Changes in Git
+
+# ------------------------------------------------------------------
+
+
+
+# Clone everything to new dir from pwd
+
+$ git clone <nameOfThepwd>/<nameOfTheNewDirYouWantToPutClone>
+  
+  
+# Go to that new dir
+
+$ cd <nameOfTheNewDirYouWantToPutClone>/
+  
+$ git status (see if you are in branch...)  
+
+$ git checkout <branchNameYouWantToGo>
+
+ 
+
+
+# See the git configuration before push
+
+$ git config -l
+
+
+
+# Push your new branch (stay in that dir)
+
+$ git push origin <branchName-you-want-to-push>
+  
+  
+  
+# Push all the branches to origin
+
+$ git push origin --all
+
+
+# Merge branch to master 
+
+
+$ git checkout master (go to master)
+
+$ git merge <branchName-you-want-merge>
+  
+$ ls -l (see the long list)
+
+# ------------------------------------------------------------------
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
