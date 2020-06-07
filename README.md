@@ -181,7 +181,7 @@ $ git status
 
 # To start git tracking the file
 
-$ git add <fileName.extension>
+$ git add "fileName.extension"
 
 
 
@@ -209,7 +209,7 @@ $ git log
 
 # To (no longer will be tracked by Git); delete file from Git and from Directory 
 
-$ git rm <fileName.extension>
+$ git rm "fileName.extension"
 #Don't forget to Commit
 
 
@@ -217,14 +217,14 @@ $ git rm <fileName.extension>
 
 # To delete file from Directory Only
 
-$ rm <fileName.extension>
+$ rm "fileName.extension"
 
 
 
 
 # If we delete file accidentally. To bring that file back
 
-$ git checkout --(space)<fileName.extension>
+$ git checkout --(space) "fileName.extension"
 
 # ------------------------------------------------------------------
 
@@ -289,19 +289,19 @@ $ cd ..
 
 # To clone a folder/dir
 
-$ git clone <folder/dir name>/ <just put the name of folder/dir where you want to clone; it will also create that folder/dir>
+$ git clone "folder/dir name"/ "just put the name of folder/dir where you want to clone; it will also create that folder/dir"
 
 $ ls -l (check if cloned)
 
 
 # Go to the folder/dir, where you just cloned
 
-$ cd <folder/dir>/
+$ cd "folder/dir"/
 
 
 # Create a file there
 
-$ touch <fileName.Ext>
+$ touch "fileName.Ext"
 
 
 
@@ -314,7 +314,7 @@ $ git log (check the dtails)
 
 # Go to original folder/dir 
 
-$ cd ../<folder/dir name>/
+$ cd ../"folder/dir name"/
 
 $ git log (see, it does not have the clone; beccause each repo is unique. We've 2 different records tracking 2 different folder/dir)
 
@@ -328,9 +328,9 @@ $ git clone my_username@server:<org-path-relative-to-user-home> ~/<local-repo-pa
   
 # Cloing from Github
 
-$ git clone <https://github.com/...> ~/<local-repo-path>  (if you don't give the name of <local-repo-path>, it will copy to pwd)
+$ git clone "https://github.com/..." ~/"local-repo-path"  (if you don't give the name of <local-repo-path>, it will copy to pwd)
   
-$ cd ../<local-repo-path> 
+$ cd ../"local-repo-path"
   
 $ ls -l (see the files)
 
@@ -343,7 +343,7 @@ $ git log (se the details of cloning)
 
 # To work on any files you just cloned
 
-$ vim <existing fileName>
+$ vim "existing fileNam"
   
 (save and exit)  
 
@@ -351,7 +351,7 @@ $ vim <existing fileName>
 
 # Add that file you just modified to git
 
-$ git add <existing fileName>
+$ git add "existing fileName"
 
 $ git status (see the files modified)
 
@@ -364,10 +364,6 @@ $ git commit -m "yourMessage"
 $ git log (see what added)
 
 (press "q" to go to terminal)
-
-
-
-<nameOfTheNewDirYouWantToPutClone>
 
 
 
@@ -402,7 +398,7 @@ $ git log --oneline
 
 $ git log -p
 
-(/<what you wan to search here>)
+(/"what you wan to search here")
 
 (press End to go down. press Shft + End to go up)
   
@@ -412,13 +408,13 @@ $ git log -p
 
 # Who did what in file
 
-$ git log -- (space) <fileName>
+$ git log -- (space) "fileName"
   
   
 
 # Who did what in file in short
 
-$ git log --oneline <fileName>
+$ git log --oneline "fileName"
   
   
   
@@ -456,7 +452,7 @@ $ git branch "newBranchName"
   
 # To change to that branch
 
-$ git cheakout <existingBranchName>
+$ git cheakout "existingBranchName"
 
 $ git status (see...)
 
@@ -505,7 +501,7 @@ $ ls -l (see website2 is not here)
 
 # Create a branch and switch back to it immediately
 
-$ git checkout -b <newBranchName>
+$ git checkout -b "newBranchName"
 
 $ git status (see if you are in branch)
 
@@ -518,7 +514,7 @@ $ vim .git/
 
 # Open one of the file
 
-$ vim <existingFileName>
+$ vim "existingFileName"
   
 (edit and save, exit)
 
@@ -532,14 +528,14 @@ $ git status (see what saved)
 
 # See contents of the file
 
-$ cat <existingFileName.extn>
+$ cat "existingFileName.extn"
 
 
 
 # Switch back to branch
 
 
-$ git checkout <existingBranchName>
+$ git checkout "existingBranchName"
 
 
 # Switch back to master 
@@ -559,16 +555,16 @@ Merging and Pushing Changes in Git
 
 # Clone everything to new dir from pwd
 
-$ git clone <nameOfThepwd>/<nameOfTheNewDirYouWantToPutClone>
+$ git clone "nameOfThepwd"/ (space) "nameOfTheNewDirYouWantToPutClone"
   
   
 # Go to that new dir
 
-$ cd <nameOfTheNewDirYouWantToPutClone>/
+$ cd "nameOfTheNewDirYouWantToPutClone"/
   
 $ git status (see if you are in branch...)  
 
-$ git checkout <branchNameYouWantToGo>
+$ git checkout "branchNameYouWantToGo"
 
  
 
@@ -581,7 +577,7 @@ $ git config -l
 
 # Push your new branch (stay in that dir)
 
-$ git push origin <branchName-you-want-to-push>
+$ git push origin "branchName-you-want-to-push"
   
   
   
@@ -595,7 +591,7 @@ $ git push origin --all
 
 $ git checkout master (go to master)
 
-$ git merge <branchName-you-want-merge>
+$ git merge "branchName-you-want-merge"
   
 $ ls -l (see the long list)
 
