@@ -57,6 +57,21 @@ Is this ok (yes/no): yes
 
 $ git --version
 
+# Location
+
+$ which git
+
+
+# For help
+
+$ man git
+
+
+# To searh manual
+
+$ man git (then inside page /"wordYouWantToSearh" , press "q" to go back to terminal)
+
+
 # See current configuration
 
 $ git config -l
@@ -137,7 +152,7 @@ $ ll -a
           
 # Create empty repository
 
-$ git init
+$ git init "file/dir name"
 
 
 
