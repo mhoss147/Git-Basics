@@ -643,18 +643,8 @@ $ ls -l (see the long list)
   
 # NOTICE: This is never a recommended use of git. This will overwrite changes on the remote. Only do this if you know 100% that your local changes should be pushed to the remote master.
 
-Try this: git push -f origin master
+git push -f origin master
   
   
 # ----------------------------------------------
-
-
-
-
-
-
-
-
-
-
 
