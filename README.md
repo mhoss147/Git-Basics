@@ -626,7 +626,9 @@ $ ls -l (see the long list)
 
 # Sets the new remote
 
-  $ git remote add origin remote repository URL
+  $ git remote add origin remoteRepositoryURL
+  
+  like, git remote add origin https://github.com/...
 
 
 # Verifies the new remote URL
@@ -646,5 +648,5 @@ $ ls -l (see the long list)
 git push -f origin master
   
   
-# ----------------------------------------------
+----------------------------------------------
 
