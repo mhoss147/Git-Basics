@@ -646,14 +646,14 @@ $ ls -l (see the long list)
 git push -f origin master
 
 
+# Reset local repository branch to be just like remote repository HEAD
 
 
-
-To remove the git commit which you have added locally do:
+- To remove the git commit which you have added locally do:
 
 	git reset --hard HEAD^
 
-To remove the remove the uncommitted files, do:
+- To remove the remove the uncommitted files, do:
 
 	git clean -fd
 
@@ -661,7 +661,7 @@ check out other git Clean options here:
 
 https://git-scm.com/docs/git-clean
 
-and then do
+- and then do
 
 	git fetch
 	git rebase origin/master
@@ -669,17 +669,18 @@ and then do
 or
 
    	git pull
+	
 Ref: https://stackoverflow.com/questions/34888874/delete-all-the-local-files-and-download-a-fresh-copy-from-git
 
   
-If you want to save your current branch's state before doing this (just in case), you can do:
+- If you want to save your current branch's state before doing this (just in case), you can do:
 
 git commit -a -m "Saving my work, just in case"
 git branch my-saved-work
 
 
 
-Setting your branch to exactly match the remote branch can be done in two steps:
+- Setting your branch to exactly match the remote branch can be done in two steps:
 
 git fetch origin
 git reset --hard origin/master
