@@ -644,7 +644,48 @@ $ ls -l (see the long list)
 # NOTICE: This is never a recommended use of git. This will overwrite changes on the remote. Only do this if you know 100% that your local changes should be pushed to the remote master.
 
 git push -f origin master
+
+
+
+
+
+To remove the git commit which you have added locally do:
+
+	git reset --hard HEAD^
+
+To remove the remove the uncommitted files, do:
+
+	git clean -fd
+
+check out other git Clean options here:
+
+https://git-scm.com/docs/git-clean
+
+and then do
+
+	git fetch
+	git rebase origin/master
+
+or
+
+   	git pull
+Ref: https://stackoverflow.com/questions/34888874/delete-all-the-local-files-and-download-a-fresh-copy-from-git
+
   
-  
+If you want to save your current branch's state before doing this (just in case), you can do:
+
+git commit -a -m "Saving my work, just in case"
+git branch my-saved-work
+
+
+
+Setting your branch to exactly match the remote branch can be done in two steps:
+
+git fetch origin
+git reset --hard origin/master
+
+Ref: https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head
+
+
 ----------------------------------------------
 
