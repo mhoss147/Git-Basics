@@ -795,7 +795,73 @@ $ cd fileName
 $ ls -la
 
 
+- Make sure your location is actual git repositoy
 
+$ pwd
+
+
+$ git status
+
+$ git add .
+
+$ git commit -m "yourMessage"
+
+
+
+# About "git push"
+
+$ git push -u <remoteName, usuallyOrigin> <branchName>
+
+
+- Editing one of the file - views/index.jade 
+
+vim views/index.jade 
+
+Changing one of the Header here...
+
+$ git status
+
+	# Changes not staged for commit:
+>>>	#   (use "git add <file>..." to update what will be committed)
+	#   (use "git checkout -- <file>..." to discard changes in working directory)
+	#
+	#       modified:   views/index.jade
+
+
+$ git add .
+
+
+$ git commit -m "Changed header text"
+
+
+$ git status
+
+
+	# On branch master
+>>>	# Your branch is ahead of 'origin/master' by 1 commit.
+	#   (use "git push" to publish your local commits)
+	#
+	nothing to commit, working directory clean
+
+
+Here "origin/master" is the remote repository
+
+
+- Try to push it with 
+
+$ git push
+
+Will prompt for your details
+
+Username for 'https://github.com': Username for your github, for me "mhoss147"
+
+Password for 'https://mhoss147@github.com': Password for your github, for me "boroCheleBond"
+
+
+$ git status
+
+	# On branch master
+	nothing to commit, working directory clean
 
 	
 	
