@@ -732,5 +732,33 @@ $ git remote add origin https://github.com/... 	(https://github.com/... = remote
 $ git push origin master
 
 
+
+# Authenticate to your Github from Git (Linux)
+
+- Easy way: Use an ssh ke pair
+
+$ ssh-keygen -t rsa -b 4096
+
+Enter file in which to save the key (/home/cloud_user/.ssh/id_rsa): I am leaving it empty
+
+
+Enter passphrase (empty for no passphrase): I am leaving it empty
+
+
+Your identification has been saved in /home/cloud_user/.ssh/id_rsa.
+Your public key has been saved in /home/cloud_user/.ssh/id_rsa.pub.
+
+
+- See the content of the public key
+
+$ cat /home/cloud_user/.ssh/id_rsa.pub
+
+
+
+
+
+
+
+
 ----------------------------------------------
 
