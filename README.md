@@ -754,8 +754,11 @@ Your public key has been saved in /home/cloud_user/.ssh/id_rsa.pub.
 $ cat /home/cloud_user/.ssh/id_rsa.pub
 
 
+Copy the ssh-key
 
+Goto your Github a/c > settings > SSH and GPG keys (on the left) > New SSH key > put title and paste the ssh-key > Add ssh key
 
+Now the git installation will be able to authenticate with Github.com in order to pull and push changes to source code repository
 
 
 
