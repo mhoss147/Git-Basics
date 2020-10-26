@@ -769,6 +769,38 @@ Forks provide a way for any user to create their own personal copy of a GitHub r
 Copy GitHub repository link > paste in address bar > click "FORK" (in upper  right corner)
 
 
+# Clone a repository
 
+- After forking the repo to your github you can clone it to your local machine 
+
+	From Code icon on the top right or use 
+	
+	$ git clone https://github.com/...(repo address)
+	
+	
+- Verify if cloned
+
+$ ls -la
+
+copy the fileName
+
+
+- Goto that dir
+
+$ cd fileName
+
+
+- Check the dir here
+
+$ ls -la
+
+
+
+
+	
+	
+	
+	
+	
 ----------------------------------------------
 
