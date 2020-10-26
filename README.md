@@ -761,6 +761,13 @@ Goto your Github a/c > settings > SSH and GPG keys (on the left) > New SSH key >
 Now the git installation will be able to authenticate with Github.com in order to pull and push changes to source code repository
 
 
+# Fork: Use it you want to make changes to repo
+
+Forks provide a way for any user to create their own personal copy of a GitHub repository which they can fully control without interfering with other users. 
+
+
+Copy GitHub repository link > paste in address bar > click "FORK" (in upper  right corner)
+
 
 
 ----------------------------------------------
