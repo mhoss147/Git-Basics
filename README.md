@@ -5,7 +5,7 @@
 # Git Introduction and Architecture
 # ------------------------------------------------------------------
 
-
+# By default, every get repositories begins with one branch in that branch is called MASTER
 
 Commit: Is siply a state. The git commit command is one of the core primary functions of Git. Prior use of the git add command is required to select the changes that will be staged for the next commit. Then git commit is used to create a snapshot of the staged changes along a timeline of a Git projects history.
 
@@ -865,7 +865,53 @@ $ git status
 
 	
 	
+# Command "git checkout"
+
+$ git checkout => checks out an existing branch i.e. it puts the contents of the branch into your working tree
+			and your working copy of the source code files.
+			
+			When you commit, whichever branch you have checked out will be the branch that the commit will be added.
+			
+$ git checkout <branch>
 	
+	
+	
+- Create a new branch and check it out immediately with -b flag
+
+
+$ git checkout -b <newBranch>
+	
+- Go to your local folder and check the branch name
+
+$ cd folderName
+
+$ git branch
+
+$ git status
+#On branch master
+nothing to commit, working directory clean
+
+$ git checkout -b newBranchSorowar
+Switched to a new branch 'newBranchSorowar'
+
+$ git status
+#On branch newBranchSorowar
+nothing to commit, working directory clean
+
+
+- Go back to master branch
+
+$ git checkout master
+
+$ git status
+#On branch master
+nothing to commit, working directory clean
+
+
+	
+	
+
+
 	
 	
 ----------------------------------------------
