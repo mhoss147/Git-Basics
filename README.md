@@ -908,7 +908,12 @@ $ git status
 nothing to commit, working directory clean
 
 
-	
+- Create a Tag
+
+$ git tag myTagSorowar		(myTagSorowar = tag name)
+
+$ git tag 
+myTagSorowar
 	
 
 
