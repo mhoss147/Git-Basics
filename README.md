@@ -908,13 +908,35 @@ $ git status
 nothing to commit, working directory clean
 
 
-- Create a Tag
+- Create a Tag (can be used for version of the App)
 
 $ git tag myTagSorowar		(myTagSorowar = tag name)
 
 $ git tag 
 myTagSorowar
 	
+
+# Pull request
+
+Merges can be handled locally using git, another way is using pull request 
+
+Pull requests is made to merge changes of yourCode into anotherBranch (usually a shared mainline), 
+and other team member can approve or deny the changes!
+
+- Make a pull request
+
+	go to your github a/c > go to repo you have made changes > click "branches" tab > will see ALL the branches > click "New pull request" (on the right of yourBranch) >
+	
+	Click the dropdown of "base repository" and select (this is WHERE youCode going now) from "head repository" > 
+	
+	you can change title, leave a comment > click "Create pull request" > will see "userName wants to merge 1 commit into master from youBranchName" >
+	
+	(code are not merged yet) all in the team can click "commits or file changed" tab and see the changes> click "Merge pull request" and > 
+	
+	"confirm merge" to confirm the Merge
+
+
+
 
 
 	
