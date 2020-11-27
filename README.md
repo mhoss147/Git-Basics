@@ -958,8 +958,37 @@ and other team member can approve or deny the changes!
 
 	nothing added to commit but untracked files present (use "git add" to track)
 
+	cloud@Azure:~/sorowarscm$ git add file1.rb
+	cloud@Azure:~/sorowarscm$ git status
+	On branch master
 
-	
+	Initial commit
+
+	Changes to be committed:
+	  (use "git rm --cached <file>..." to unstage)
+
+		new file:   file1.rb
+
+	cloud@Azure:~/sorowarscm$ git commit -a -m "Initial commit to file1"
+	[master (root-commit) 0bd0032] Initial commit to file1
+	 1 file changed, 0 insertions(+), 0 deletions(-)
+	 create mode 100644 file1.rb
+	cloud@Azure:~/sorowarscm$ git status
+	On branch master
+	nothing to commit, working directory clean
+
+- Craete a branch named sorowarBug
+
+	cloud@Azure:~/sorowarscm$ git branch sorowarBug
+
+- Switch to that branch
+
+	cloud@Azure:~/sorowarscm$ git checkout sorowarBug
+	Switched to branch 'sorowarBug'
+
+
+
+
 	
 ----------------------------------------------
 
