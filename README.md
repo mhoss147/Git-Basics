@@ -5,7 +5,7 @@
 # Git Introduction and Architecture
 # ------------------------------------------------------------------
 
-# By default, every get repositories begins with one branch in that branch is called MASTER
+# By default, every Git repositories begins with one branch called "MASTER"
 
 Commit: Is siply a state. The git commit command is one of the core primary functions of Git. Prior use of the git add command is required to select the changes that will be staged for the next commit. Then git commit is used to create a snapshot of the staged changes along a timeline of a Git projects history.
 
@@ -984,7 +984,35 @@ and other team member can approve or deny the changes!
 - Switch to that branch
 
 	cloud@Azure:~/sorowarscm$ git checkout sorowarBug
-	Switched to branch 'sorowarBug'
+	Switched to branch 'sorowarBug'	(changes the Head)
+	
+
+cloud@Azure:~/sorowarscm$ vim file1.rb
+
+Then I have added this line "#Making some changes for demo only..."
+
+
+cloud@Azure:~/sorowarscm$ git status
+	On branch sorowarBug
+	Changes not staged for commit:
+	  (use "git add <file>..." to update what will be committed)
+	  (use "git checkout -- <file>..." to discard changes in working directory)
+
+		modified:   file1.rb
+
+	no changes added to commit (use "git add" and/or "git commit -a")
+cloud@Azure:~/sorowarscm$ git add file1.rb
+cloud@Azure:~/sorowarscm$ git commit -a -m "Second commit to file1"
+	[sorowarBug afdab18] Second commit to file1
+	 1 file changed, 1 insertion(+)
+	cloud@Azure:~/sorowarscm$ git status
+	On branch sorowarBug
+	nothing to commit, working directory clean
+
+cloud@Azure:~/sorowarscm$ cat file1.rb
+	#Making some changes for demo only...
+
+
 
 
 
