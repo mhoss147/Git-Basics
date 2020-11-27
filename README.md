@@ -936,7 +936,10 @@ and other team member can approve or deny the changes!
 	"confirm merge" to confirm the Merge
 
 
+# Create branch from master, work on branch, and merge the branch to master
 
+
+- 
 
 
 	
