@@ -939,7 +939,24 @@ and other team member can approve or deny the changes!
 # Create branch from master, work on branch, and merge the branch to master
 
 
-- 
+	cloud@Azure:~$ ls
+	clouddrive  scm
+	cloud@Azure:~$ mkdir sorowarscm
+	cloud@Azure:~$ cd sorowarscm/
+	cloud@Azure:~/sorowarscm$ git init
+	Initialized empty Git repository in /home/cloud/sorowarscm/.git/
+	cloud@Azure:~/sorowarscm$ touch file1.rb
+	cloud@Azure:~/sorowarscm$ git status
+	On branch master
+
+	Initial commit
+
+	Untracked files:
+	  (use "git add <file>..." to include in what will be committed)
+
+		file1.rb
+
+	nothing added to commit but untracked files present (use "git add" to track)
 
 
 	
