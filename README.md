@@ -977,7 +977,7 @@ and other team member can approve or deny the changes!
 	On branch master
 	nothing to commit, working directory clean
 
-- Craete a branch named sorowarBug
+- Create a branch named sorowarBug
 
 	cloud@Azure:~/sorowarscm$ git branch sorowarBug
 
@@ -1012,11 +1012,33 @@ cloud@Azure:~/sorowarscm$ git commit -a -m "Second commit to file1"
 cloud@Azure:~/sorowarscm$ cat file1.rb
 	#Making some changes for demo only...
 
+- Go to master and check this changes
 
+	cloud@Azure:~/sorowarscm$ git checkout master
+	Switched to branch 'master'
+	cloud@Azure:~/sorowarscm$ cat file1.rb
 
+- Now while in master, merge branch to master
 
+	cloud@Azure:~/sorowarscm$ git merge sorowarBug
+	Updating 0bd0032..afdab18
+	Fast-forward
+	 fil1     | 4 ++++
+	 file1.rb | 1 +
+	 2 files changed, 5 insertions(+)
+	 create mode 100644 fil1
 
-
+	cloud@Azure:~/sorowarscm$ cat file1.rb
+	#Making some changes for demo only...
+	
+Now you can see the changes...
 	
 ----------------------------------------------
+
+
+
+
+
+
+
 
